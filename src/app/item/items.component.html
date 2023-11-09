@@ -1,0 +1,98 @@
+<!-- <ActionBar title="My A"> </ActionBar>
+
+<GridLayout>
+  <ListView [items]="items">
+	<ng-template let-item="item">
+	  <StackLayout [nsRouterLink]="['/item', item.id]">
+		<Label [text]="item.name"></Label>
+	  </StackLayout>
+	</ng-template>
+  </ListView>
+</GridLayout> -->
+
+<ActionBar title="Complete Handover" backgroundColor="#262633" color="#FFFFFF">
+  <NavigationButton  color="#FFFFFF" text="Go back" android.systemIcon="ic_menu_back" />
+</ActionBar>
+<FlexboxLayout  flexDirection="column">
+  <FlexboxLayout style="padding-bottom: 10;padding-top: 10;" flexDirection="row" height="7%" width="90%" class="bottom-border" alignSelf="center" justifyContent="space-between">
+	<Label style="color: #2B2B3B; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 400;line-height: normal;" text="LOS1_B01_EG00_231_Beton AG" width="200" ></Label>
+	<!-- <Label text="content" width="70" ></Label> -->
+	<Button class="paused-btn" style="width:100;height:20;border-radius: 4;color: #D28E0E;text-align: center;font-family: Roboto;font-size: 10px;font-style: normal;font-weight: 400;line-height: 16px;" text="Paused"></Button>
+  </FlexboxLayout>
+  <FlexboxLayout flexDirection="column"  class="" style="padding-top: 20;padding-left: 20;" alignItems='flex-start' >
+	<FlexboxLayout flexDirection="row" width="90%">
+	  <Label style="margin-right: 10;" class="mdi" fontSize="20" text="&#xe8b5;"></Label>
+	  <label style="color: rgba(0, 0, 0, 0.60);font-family: Roboto;font-size: 12px;font-style: normal;font-weight: 700;line-height: 16px;letter-spacing: 0.2;text-transform: uppercase;" text="Event Log"></label>
+	</FlexboxLayout>
+	<FlexboxLayout class="bottom-border"  flexDirection="row"  width="360" style="padding-top: 10;" alignItems='flex-start' >
+	  <FlexboxLayout flexDirection="column">
+		<Label style="padding: 10;border-radius: 50;background-color: #F2F2E0;" color="#B6B34D" class="fa" fontSize="20" text="&#xf01d;"></Label>
+		<label height="20"  style="border-right-width: 2;border-right-color: #E9E9EA;margin-right: 17;"></label>
+		<Label style="padding: 10;border-radius: 50;background-color: #F2F2E0;" color="#B6B34D" class="fa" fontSize="20" text="&#xf28b;"></Label>
+	  </FlexboxLayout>
+	  <FlexboxLayout flexDirection="column" height="440">
+		  <FlexboxLayout flexDirection="column" style="margin-left: 6;">
+			  <label text="Started Handover" style="color: #262633;font-family: Roboto;font-size: 14px;font-style: normal;font-weight: 400;line-height: normal;"></label>
+			  <label text="21.09.2021. 13:00  |  by Mortiz Mustermann" style="color:#676770;font-family: Roboto;font-size: 12px; font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0.1;"></label>
+		  </FlexboxLayout>
+		  <FlexboxLayout flexDirection="column" style=" margin-left: 6;margin-top: 14;">
+		  	  <label text="Handover Paused" style="color: #262633;font-family: Roboto;font-size: 14px;font-style: normal;font-weight: 400;line-height: normal;"></label>
+			  <label text="21.09.2021. 13:20  |  by Mortiz Mustermann" style="color:#676770;font-family: Roboto;font-size: 12px; font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0.1;"></label>
+		  </FlexboxLayout>
+
+		  <FlexboxLayout flexDirection="row" style=" margin-left: 6;margin-top: 20;">
+			  <Label style="margin-right: 6;"  color="#00000061" class="md-icon" fontSize="20" text="&#xea3f;"></Label>
+		  	  <label color="#00000061" text="Comments" style="font-family: Roboto;font-size: 12px;font-style: normal;font-weight: 700;line-height: 16px;letter-spacing: 0.2;text-transform: uppercase;"></label>
+		  </FlexboxLayout>
+
+		  <FlexboxLayout flexDirection="row" style=" margin-left: 6;" width="220">
+			  <label textWrap="true" color="#00000061" text="Packages looked good, 1 item was &#xa; missing. Going for Coffe. Really tired of &#xa; this work." style="font-family: Roboto; font-size: 12px;font-style: normal;font-weight: 400;line-height: 4;letter-spacing: 0.1;"></label>
+		  </FlexboxLayout>
+
+		  <FlexboxLayout flexDirection="row" style=" margin-left: 6;margin-top: 12;">
+			  <Label style="margin-right: 6;"  color="#00000061" class="mdi" fontSize="20" text="&#xe412;"></Label>
+			  <label color="#00000061" text="Material Photo" style="font-family: Roboto;font-size: 12px;font-style: normal;font-weight: 700;line-height: 16px;letter-spacing: 0.2;text-transform: uppercase;"></label>
+		  </FlexboxLayout>
+		  <FlexboxLayout flexDirection="row" style=" margin-left: 6;margin-top: 4;">
+			<Image height="50" width="50" borderRadius="4" style="margin-right: 8;" src="~/app/images/f.jpg"></Image>
+			<Image height="50" width="50" borderRadius="4" style="margin-right: 8;" src="~/app/images/b.jpg"></Image>
+			<Image height="50" width="50" borderRadius="4" style="margin-right: 8;" src="~/app/images/c.jpg"></Image>
+			<Image height="50" width="50" borderRadius="4" style="margin-right: 8;" src="~/app/images/d.jpg"></Image>
+			<Image height="50" width="50" borderRadius="4" style="margin-right: 8;" src="~/app/images/e.png"><label text="4+"></label></Image>
+			<!-- <Image height="50" width="50" borderRadius="4" style="margin-right: 8;" src="~/app/images/b.png"></Image> -->
+		  </FlexboxLayout>
+
+		  <FlexboxLayout flexDirection="row" style=" margin-left: 6;margin-top: 18;">
+			<Label style="margin-right: 6;"  color="#00000061" class="mdi" fontSize="20" text="&#xe412;"></Label>
+			<label color="#00000061" text="Material Photo" style="font-family: Roboto;font-size: 12px;font-style: normal;font-weight: 700;line-height: 16px;letter-spacing: 0.2;text-transform: uppercase;"></label>
+		</FlexboxLayout>
+		<FlexboxLayout flexDirection="row" style=" margin-left: 6;margin-top: 4; border-bottom: 8;">
+		  <Image height="50" width="50" borderRadius="4" src="~/app/images/ra.jpg"></Image>
+		</FlexboxLayout>
+	  </FlexboxLayout>
+	</FlexboxLayout>
+
+	<FlexboxLayout flexDirection="row" width="90%" style="margin-top: 10;">
+		<Label style="margin-right: 10;" class="mdi" fontSize="20" text="&#xe55c;"></Label>
+		<label style="color: rgba(0, 0, 0, 0.60);font-family: Roboto;font-size: 12px;font-style: normal;font-weight: 700;line-height: 16px;letter-spacing: 0.2;text-transform: uppercase;" text="Destination"></label>
+	</FlexboxLayout>
+
+  </FlexboxLayout>
+  <FlexboxLayout flexDirection="column" width="90%" style="margin-top: 2;" >
+		<FlexboxLayout flexDirection="row" width="60%" style="margin-top: 2;padding-left: 20;">
+			<label text="Building" style="margin-right:44;color: rgba(0, 0, 0, 0.60);font-family: Roboto;font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0;"></label>
+			<label text="BAU - 04" style="color: rgba(0, 0, 0, 0.60);font-family: Roboto;font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0;"></label>
+		</FlexboxLayout>
+		<FlexboxLayout flexDirection="row" width="60%" style="margin-top: 2; padding-left: 20;">
+			<label text="Floor" style="margin-right:44;color: rgba(0, 0, 0, 0.60);font-family: Roboto;font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0;"></label>
+			<label text="BAU - 04" style="color: rgba(0, 0, 0, 0.60);font-family: Roboto;font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0;"></label>
+		</FlexboxLayout>
+		<FlexboxLayout flexDirection="row" width="60%" style="margin-top: 2; padding-left: 20;">
+			<label text="Laydown Area" style="margin-right:44;color: rgba(0, 0, 0, 0.60);font-family: Roboto;font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0;"></label>
+			<label text="OG5-AW" style="color: rgba(0, 0, 0, 0.60);font-family: Roboto;font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0;"></label>
+		</FlexboxLayout>
+ </FlexboxLayout>
+ <FlexboxLayout flexDirection="column" width="90%" style="margin-top: 40;" alignItems="center" justifyContent="space-between" >
+	<Button class="resume-handover" style="width:332;height:48;border-radius: 4;color:#FFFFFF;background-color: #969300;text-align: center;font-family: Roboto;font-size: 14px;font-style: normal;font-weight: 700;line-height: 16px;letter-spacing: 0.1;text-transform: uppercase;" text="Resume Handover"></Button>
+</FlexboxLayout>
+</FlexboxLayout>

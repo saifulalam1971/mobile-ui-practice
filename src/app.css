@@ -1,0 +1,16 @@
+@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+Button.-primary {
+  font-size: 18;
+}
+.fa {
+  font-family: FontAwesome, fontawesome-webfont;
+}
+
+.md-icon {
+  font-family: MaterialIcons, material-icons;
+}
+.mdi {
+  font-family: MaterialIcons-Regular, Material Icons;
+}
