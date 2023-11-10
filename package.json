@@ -14,9 +14,9 @@
     "@angular/router": "~16.2.0",
     "@nativescript-community/ui-material-button": "^7.2.4",
     "@nativescript/angular": "^16.0.0",
+    "@nativescript/camera": "^5.0.15",
     "@nativescript/core": "~8.6.0",
     "@nativescript/theme": "~3.0.2",
-    "nativescript-camera": "^4.5.0",
     "rxjs": "~7.8.0",
     "zone.js": "~0.13.0"
   },
