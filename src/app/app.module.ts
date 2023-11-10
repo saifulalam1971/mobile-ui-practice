@@ -3,7 +3,9 @@ import { NativeScriptCommonModule, NativeScriptFormsModule, NativeScriptModule }
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
-import { ItemsComponent } from './item/items.component'
+import { ItemsComponent } from './item/items.component';
+import { ListComponent } from './home/list/list.component';
+import { DetailsComponent } from './home/details/details.component'
 import { ItemDetailComponent } from './item/item-detail.component'
 import { NativeScriptMaterialButtonModule } from "@nativescript-community/ui-material-button/angular";
 import { ReactiveFormsModule } from '@angular/forms'
@@ -19,7 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms'
     AppRoutingModule,
     NativeScriptMaterialButtonModule
   ],
-  declarations: [AppComponent, ItemsComponent, ItemDetailComponent],
+  declarations: [AppComponent, ItemsComponent, ItemDetailComponent,ListComponent, DetailsComponent],
   providers: [],
   schemas: [NO_ERRORS_SCHEMA],
 })

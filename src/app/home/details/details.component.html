@@ -1,0 +1,30 @@
+<!-- <ActionBar title="Player profile">
+</ActionBar> -->
+<!-- <ActionBar>
+    <FlexboxLayout flexDirection="row"  class="" style="width: 100%;" alignItems='flex-start'>
+      <Label  style="padding: 10;border-radius: 50;background-color: #F2F2E0;margin-right: 10;" color="#B6B34D" class="mdi" fontSize="20" text="&#xe5c4;" [nsRouterLink]="['/list']"></Label>
+      <Label  text="Custom Title" style="margin-bottom: 30;" fontSize="20" ></Label>
+    </FlexboxLayout>
+  </ActionBar> -->
+  <ActionBar title="Player profile">
+    <NavigationButton [nsRouterLink]="['/list']" text="Go back" android.systemIcon="ic_menu_back" />
+  </ActionBar>
+<FlexboxLayout flexDirection="column">
+    <!-- <Label style="padding: 10;border-radius: 50;background-color: #F2F2E0;" color="#B6B34D" class="mdi" fontSize="20" text="&#xe5c4;" [nsRouterLink]="['/list']"></Label> -->
+  <FlexboxLayout class="m-15">
+    <Label class="h2" [text]="item.id + '. '"></Label>
+    <Label class="h2" [text]="item.name"></Label>
+  </FlexboxLayout>
+  <FlexboxLayout flexDirection="row"  class="" style="padding-left: 20;" alignItems='flex-start' >
+    <label text="Role: " style="color: #262633;font-family: Roboto;font-size: 14px;font-style: normal;font-weight: 500;line-height: normal;"> </label>
+    <Label class="" [text]="item.role"></Label>
+  </FlexboxLayout>
+  <FlexboxLayout flexDirection="row"  class="" style="padding-top: 20;padding-left: 20;" alignItems='flex-start' >
+    <label text="Age: " style="color: #262633;font-family: Roboto;font-size: 14px;font-style: normal;font-weight: 500;line-height: normal;"> </label>
+    <Label class="" [text]="item.age"></Label>
+  </FlexboxLayout>
+</FlexboxLayout>
+<StackLayout style="margin-top: 0;height: 80;width: 300; border-radius: 4;padding: 10;" row="0" col="0" (tap)="openCamera()" horizontalAlignment="center" borderWidth="1" borderColor="black" backgroundColor="#3C414B">
+    <Label text="&#xf030;" class="fa fa-camera" horizontalAlignment="center" fontSize="28" style="color:#FFFFFF; z-index: 0;"></Label>
+    <Label text="Capture" horizontalAlignment="center" fontSize="12" color="#FFFFFF"></Label>
+</StackLayout>
